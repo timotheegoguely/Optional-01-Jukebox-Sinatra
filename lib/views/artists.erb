@@ -1,1 +1,10 @@
-<h2>Artists</h2>
+<h2><%= @albums[0][2] %></h2>
+<h3>Albums</h3>
+
+<div class="list-group">
+  <% @albums.each do |album| %>
+    <a class="list-group-item" href="/albums/<%= album[0] %>">
+      <%= album[1] %>
+    </a>
+  <% end %>
+</div>

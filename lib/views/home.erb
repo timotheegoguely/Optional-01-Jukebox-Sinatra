@@ -1,1 +1,9 @@
 <h2>Artists</h2>
+
+<div class="list-group">
+  <% @artists.each do |artist| %>
+    <a class="list-group-item" href="/artists/<%= artist[0] %>">
+      <%= artist[1] %>
+    </a>
+  <% end %>
+</div>
